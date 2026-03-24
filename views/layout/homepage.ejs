@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Wanderlust</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url("https://images.unsplash.com/photo-1501785888041-af3ef285b470") center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: white;
+    }
+
+  
+    .hero-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .logo i {
+      color: #fe424d;
+      margin-right: 5px;
+    }
+
+  
+    .hero-content {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      color: #f1f1f1;
+    }
+
+   
+    .hero-btn {
+      background-color: #fe424d;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .hero-btn:hover {
+      background-color: #e03150;
+      transform: scale(1.05);
+    }
+
+
+    .hero-footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+
+   
+    @media (max-width: 768px) {
+      .hero-nav {
+        padding: 1rem 1.5rem;
+      }
+
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero">
+
+
+    <div class="hero-nav">
+      <div class="logo">
+        <i class="fa-solid fa-compass"></i> Wanderlust
+      </div>
+    </div>
+
+   
+    <div class="hero-content">
+      <h1>Welcome to WanderNest</h1>
+      <h2>Find Your Perfect Stay</h1>
+      <p>
+        Explore beautiful destinations, discover unique homes, and experience travel like never before.
+      </p>
+
+      <a href="/listing" class="hero-btn">
+        Start Exploring
+      </a>
+    </div>
+
+  
+    <div class="hero-footer">
+      © 2026 Wanderlust<br><br><br>
+      <h2> Made by Arif Reja with ❤️ | 2026</h2>
+    </div>
+
+  </div>
+
+</body>
+</html>

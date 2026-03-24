@@ -1,0 +1,73 @@
+<% layout("/layout/boilerplate") %>
+
+<link rel="stylesheet" href="/edit.css">
+
+<div class="edit-wrapper">
+  <div class="edit-card">
+
+    <h2>Edit Listing</h2>
+
+    <form method="POST" action="/listing/<%= listing._id %>?_method=PUT">
+
+      <label>Title</label>
+      <input 
+        name="listing[title]" 
+        value="<%= listing.title %>" 
+        type="text" 
+        required
+      />
+
+      <label>Description</label>
+      <textarea name="listing[description]" required>
+<%= listing.description %>
+      </textarea>
+
+      <label>Image URL</label>
+      <input 
+        name="listing[image]" 
+        value="<%= listing.image.url %>" 
+        type="text" 
+        required
+      />
+
+      <!-- Image Preview -->
+      <div class="image-box">
+        <img src="<%= listing.image.url %>" alt="preview">
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Price</label>
+          <input 
+            name="listing[price]" 
+            value="<%= listing.price %>" 
+            type="number" 
+            required
+          />
+        </div>
+
+        <div>
+          <label>Country</label>
+          <input 
+            name="listing[country]" 
+            value="<%= listing.country %>" 
+            type="text" 
+            required
+          />
+        </div>
+      </div>
+
+      <label>Location</label>
+      <input 
+        name="listing[location]" 
+        value="<%= listing.location %>" 
+        type="text" 
+        required
+      />
+
+      <button>Update Listing</button>
+
+    </form>
+
+  </div>
+</div>

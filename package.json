@@ -1,13 +1,14 @@
 {
   "name": "project1",
   "version": "1.0.0",
-  "description": "",
+  "description": "EJS + Express App",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Arif Reja",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
